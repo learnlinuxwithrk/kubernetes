@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: nginx
+spec:
+  containers:
+  - name: nginx
+    image: nginx
+  nodeName: nodeone
+
+  #This code will always create pods on host where hostname is nodeone.
